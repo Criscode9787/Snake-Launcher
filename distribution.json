@@ -1,0 +1,688 @@
+{
+  "version": "1.0.0",
+  "rss": "<LINK TO RSS FEED>",
+  "discord": {
+    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+  },
+  "servers": [
+    {
+      "id": "Snake-Games-1.18.2",
+      "name": "Snake-Games (Minecraft 1.18.2)",
+      "description": "Snake-Games Running Minecraft 1.18.2 (Forge v40.3.3)",
+      "icon": "https://cdn.discordapp.com/attachments/1335640898477756589/1335645894220972072/SNAKE_LOGO.png?ex=67a0ecac&is=679f9b2c&hm=6f50582be42bb89f4b80ffa0a2b833749e38a9471276c1f77e1f6de882b81011&",
+      "version": "1.0.0",
+      "address": "localhost:25565",
+      "minecraftVersion": "1.18.2",
+      "discord": {
+        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+      },
+      "mainServer": false,
+      "autoconnect": false,
+      "modules": [
+        {
+          "id": "net.minecraftforge:lowcodelanguage:1.18.2-40.3.3",
+          "name": "Minecraft Forge (lowcodelanguage)",
+          "type": "ForgeHosted",
+          "classpath": true,
+          "artifact": {
+            "size": 7383,
+            "MD5": "7bdd1e82b296eb5950bee03355070f54",
+            "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/lowcodelanguage/1.18.2-40.3.3/lowcodelanguage-1.18.2-40.3.3.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.18.2-40.3.3",
+              "name": "Minecraft Forge (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 16555,
+                "MD5": "9d5a5672264bc8d70412b4854a37ef40",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/versions/1.18.2-forge-40.3.3/1.18.2-forge-40.3.3.json"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlcore:1.18.2-40.3.3",
+              "name": "Minecraft Forge (fmlcore)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 111969,
+                "MD5": "524ce6dbcce8a4e66cf621db84dbff15",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/fmlcore/1.18.2-40.3.3/fmlcore-1.18.2-40.3.3.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:javafmllanguage:1.18.2-40.3.3",
+              "name": "Minecraft Forge (javafmllanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 16293,
+                "MD5": "680940567ffa15bbdce88d0003e47d0a",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/javafmllanguage/1.18.2-40.3.3/javafmllanguage-1.18.2-40.3.3.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:mclanguage:1.18.2-40.3.3",
+              "name": "Minecraft Forge (mclanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 4987,
+                "MD5": "655b314f106d5a00632da3ee6e015828",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/mclanguage/1.18.2-40.3.3/mclanguage-1.18.2-40.3.3.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.18.2-40.3.3:universal",
+              "name": "Minecraft Forge (universal jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 2617290,
+                "MD5": "0d25b63cd6c3c5422e90789345e8ee81",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/forge/1.18.2-40.3.3/forge-1.18.2-40.3.3-universal.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.18.2-40.3.3:client",
+              "name": "Minecraft Forge (client jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 4392512,
+                "MD5": "f00aaf2eaf1fbe9543504665dd0b284e",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/forge/1.18.2-40.3.3/forge-1.18.2-40.3.3-client.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.18.2-20220404.173914:srg",
+              "name": "Minecraft Forge (client srg)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 13796791,
+                "MD5": "49d0ce9681f0ffd3c5a177f6ad45c80b",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-srg.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.18.2-20220404.173914:slim",
+              "name": "Minecraft Forge (client slim)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 10909711,
+                "MD5": "62184203a1e66c6c72b415b7d6e64c0d",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-slim.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.18.2-20220404.173914:extra",
+              "name": "Minecraft Forge (client extra)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 9349972,
+                "MD5": "5de62b239289ed8e596b386766b87b41",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-extra.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "cpw.mods:securejarhandler:1.0.8",
+              "name": "Minecraft Forge (securejarhandler)",
+              "type": "Library",
+              "artifact": {
+                "size": 85028,
+                "MD5": "102e2b8d94eec8aca0da835d2d3a359e",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/cpw/mods/securejarhandler/1.0.8/securejarhandler-1.0.8.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.7.1",
+              "name": "Minecraft Forge (asm)",
+              "type": "Library",
+              "artifact": {
+                "size": 126093,
+                "MD5": "e2cdd32d198ad31427d298eee9d39d8d",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.7.1",
+              "name": "Minecraft Forge (asm-commons)",
+              "type": "Library",
+              "artifact": {
+                "size": 73459,
+                "MD5": "8344aea3c8b7d707e9d35a62710e77c9",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/ow2/asm/asm-commons/9.7.1/asm-commons-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.7.1",
+              "name": "Minecraft Forge (asm-tree)",
+              "type": "Library",
+              "artifact": {
+                "size": 51939,
+                "MD5": "e85029f613b6469989cc7cf53fe06b74",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/ow2/asm/asm-tree/9.7.1/asm-tree-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.7.1",
+              "name": "Minecraft Forge (asm-util)",
+              "type": "Library",
+              "artifact": {
+                "size": 94519,
+                "MD5": "36d373a9cd6cad9b35db9f984c6b4bbb",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/ow2/asm/asm-util/9.7.1/asm-util-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.7.1",
+              "name": "Minecraft Forge (asm-analysis)",
+              "type": "Library",
+              "artifact": {
+                "size": 35126,
+                "MD5": "4cd9e7178dfb85371bba3077e40cd514",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/ow2/asm/asm-analysis/9.7.1/asm-analysis-9.7.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:accesstransformers:8.0.4",
+              "name": "Minecraft Forge (accesstransformers)",
+              "type": "Library",
+              "artifact": {
+                "size": 77756,
+                "MD5": "f0d3533f9437ba4428eaee9f28f7ecd9",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/accesstransformers/8.0.4/accesstransformers-8.0.4.jar"
+              }
+            },
+            {
+              "id": "org.antlr:antlr4-runtime:4.9.1",
+              "name": "Minecraft Forge (antlr4-runtime)",
+              "type": "Library",
+              "artifact": {
+                "size": 337868,
+                "MD5": "0dcc4b860d5d8d2852ab94d58c56ca2d",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:eventbus:5.0.3",
+              "name": "Minecraft Forge (eventbus)",
+              "type": "Library",
+              "artifact": {
+                "size": 42838,
+                "MD5": "c8b735cdfe9975a569626d72ad40377f",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/eventbus/5.0.3/eventbus-5.0.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:forgespi:4.0.15-4.x",
+              "name": "Minecraft Forge (forgespi)",
+              "type": "Library",
+              "artifact": {
+                "size": 22072,
+                "MD5": "8509a972b27c9f037d55c61e16fc051f",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/forgespi/4.0.15-4.x/forgespi-4.0.15-4.x.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:coremods:5.2.5",
+              "name": "Minecraft Forge (coremods)",
+              "type": "Library",
+              "artifact": {
+                "size": 31872,
+                "MD5": "a1cf1bb00ed73d734fec9368ab06f894",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/coremods/5.2.5/coremods-5.2.5.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:modlauncher:9.1.3",
+              "name": "Minecraft Forge (modlauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 129301,
+                "MD5": "dca70519c3e53ac018d6f50c6f90cd38",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/cpw/mods/modlauncher/9.1.3/modlauncher-9.1.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:unsafe:0.2.0",
+              "name": "Minecraft Forge (unsafe)",
+              "type": "Library",
+              "artifact": {
+                "size": 2834,
+                "MD5": "2d1016ebe4c1a63dd50a59d26bd12db1",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:core:3.6.4",
+              "name": "Minecraft Forge (core)",
+              "type": "Library",
+              "artifact": {
+                "size": 199834,
+                "MD5": "d83ab07267e402131fb93d899a57f5cd",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:toml:3.6.4",
+              "name": "Minecraft Forge (toml)",
+              "type": "Library",
+              "artifact": {
+                "size": 31816,
+                "MD5": "bc95d0709fff2164b01fd09fbc988be8",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/com/electronwill/night-config/toml/3.6.4/toml-3.6.4.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.6.3",
+              "name": "Minecraft Forge (maven-artifact)",
+              "type": "Library",
+              "artifact": {
+                "size": 57824,
+                "MD5": "b83c1943a0783f3f81d4cd4c83c363e1",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/apache/maven/maven-artifact/3.6.3/maven-artifact-3.6.3.jar"
+              }
+            },
+            {
+              "id": "net.jodah:typetools:0.8.3",
+              "name": "Minecraft Forge (typetools)",
+              "type": "Library",
+              "artifact": {
+                "size": 15425,
+                "MD5": "ee4596e1413cc1a5e080c971d6064753",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/jodah/typetools/0.8.3/typetools-0.8.3.jar"
+              }
+            },
+            {
+              "id": "net.minecrell:terminalconsoleappender:1.2.0",
+              "name": "Minecraft Forge (terminalconsoleappender)",
+              "type": "Library",
+              "artifact": {
+                "size": 15977,
+                "MD5": "679363fa893293791e55a21f81342f87",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-reader:3.12.1",
+              "name": "Minecraft Forge (jline-reader)",
+              "type": "Library",
+              "artifact": {
+                "size": 150765,
+                "MD5": "a2e7b012cd9802f83321187409174a94",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/jline/jline-reader/3.12.1/jline-reader-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.12.1",
+              "name": "Minecraft Forge (jline-terminal)",
+              "type": "Library",
+              "artifact": {
+                "size": 211712,
+                "MD5": "3c52be5ab5e3847be6e62269de924cb0",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/jline/jline-terminal/3.12.1/jline-terminal-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.spongepowered:mixin:0.8.5",
+              "name": "Minecraft Forge (mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1089277,
+                "MD5": "19b3a2ae9e445a6e626fd7d1648cfcb8",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+              }
+            },
+            {
+              "id": "org.openjdk.nashorn:nashorn-core:15.4",
+              "name": "Minecraft Forge (nashorn-core)",
+              "type": "Library",
+              "artifact": {
+                "size": 2167292,
+                "MD5": "a9b3360e6a486cf62c1952c7816b7d97",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarSelector:0.3.19",
+              "name": "Minecraft Forge (JarJarSelector)",
+              "type": "Library",
+              "artifact": {
+                "size": 17374,
+                "MD5": "2bb6cbe0e6c6fbcd8f92d2e6b1ea678e",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/JarJarSelector/0.3.19/JarJarSelector-0.3.19.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarMetadata:0.3.19",
+              "name": "Minecraft Forge (JarJarMetadata)",
+              "type": "Library",
+              "artifact": {
+                "size": 15895,
+                "MD5": "9633546d299d4282ca68d10582be1c8f",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/JarJarMetadata/0.3.19/JarJarMetadata-0.3.19.jar"
+              }
+            },
+            {
+              "id": "net.java.dev.jna:jna:5.12.1",
+              "name": "Minecraft Forge (jna)",
+              "type": "Library",
+              "artifact": {
+                "size": 1866196,
+                "MD5": "3bab13d7f5ca715013fcac64ceb4108d",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar"
+              }
+            },
+            {
+              "id": "net.java.dev.jna:jna-platform:5.12.1",
+              "name": "Minecraft Forge (jna-platform)",
+              "type": "Library",
+              "artifact": {
+                "size": 1356627,
+                "MD5": "061ec627ed090f59104e33cea38c97cd",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:bootstraplauncher:1.0.0",
+              "name": "Minecraft Forge (bootstraplauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 7828,
+                "MD5": "1632575563bb6ead2ae3a087945f18be",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/cpw/mods/bootstraplauncher/1.0.0/bootstraplauncher-1.0.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarFileSystems:0.3.19",
+              "name": "Minecraft Forge (JarJarFileSystems)",
+              "type": "Library",
+              "artifact": {
+                "size": 32195,
+                "MD5": "c2be1a88b63eb1b58b00ab6e498cd97d",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlloader:1.18.2-40.3.3",
+              "name": "Minecraft Forge (fmlloader)",
+              "type": "Library",
+              "artifact": {
+                "size": 258242,
+                "MD5": "4fe21728629a557118166663c30bc683",
+                "url": "https://iridescent-liger-86f272.netlify.app/repo/lib/net/minecraftforge/fmlloader/1.18.2-40.3.3/fmlloader-1.18.2-40.3.3.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "io.github.kosmx:bendylib:2.1.1@jar",
+          "name": "Bendy lib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 36623,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/bendy-lib-forge-2.1.1.jar",
+            "MD5": "58989d5ae5bec172a564f704d1a254a3"
+          }
+        },
+        {
+          "id": "me.shedaniel.clothconfig:cloth_config:6.5.102@jar",
+          "name": "Cloth Config v4 API",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1160183,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/cloth-config-6.5.102-forge.jar",
+            "MD5": "ad8c958a2a3c80fd072a070b08cbc34b"
+          }
+        },
+        {
+          "id": "team.creative:cmdcam:2.0.16@jar",
+          "name": "CMDCam",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 127548,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/CMDCam_FORGE_v2.0.16_mc1.18.2.jar",
+            "MD5": "21359d9c16b28d3ce4f7d404179cc975"
+          }
+        },
+        {
+          "id": "com.simibubi:create:0.5.0.i@jar",
+          "name": "Create",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 13322194,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/create-1.18.2-0.5.0.i.jar",
+            "MD5": "a76ff4f84748552fe28ae57aa569b9f0"
+          }
+        },
+        {
+          "id": "team.creative:creativecore:0.0.0@jar",
+          "name": "CreativeCore",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 857653,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/CreativeCore_FORGE_v2.6.17_mc1.18.2.jar",
+            "MD5": "87a663fad3077fc0ad12a8c8223208b0"
+          }
+        },
+        {
+          "id": "com.tom:cpm:0.5.1a@jar",
+          "name": "Customizable Player Models",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1824885,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/CustomPlayerModels-1.18-0.5.1a.jar",
+            "MD5": "1b2fe55ffb4ce9af80aef30648457870"
+          }
+        },
+        {
+          "id": "com.blackout:extendedslabs:2.3.0@jar",
+          "name": "Extended Slabs +",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2029496,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/extendedslabs-1.18.2-2.3.0.jar",
+            "MD5": "a732befe793472221cbc7ada6902f5a9"
+          }
+        },
+        {
+          "id": "com.jozufozu:flywheel:0.6.8.a@jar",
+          "name": "Flywheel",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 543654,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/flywheel-forge-1.18.2-0.6.8.a.jar",
+            "MD5": "cf0270b5afb319aac5b6e0b42c9f7af6"
+          }
+        },
+        {
+          "id": "software.bernie.example:geckolib3:3.0.57@jar",
+          "name": "GeckoLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2927832,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/geckolib-forge-1.18-3.0.57.jar",
+            "MD5": "d491c30c6d9bd3f767bd545cbaf6502e"
+          }
+        },
+        {
+          "id": "net.mcreator:partykhaimod:1.0.0@jar",
+          "name": "Partykhaimod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 749701,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/KhaiDecoration-1.18.2.jar",
+            "MD5": "0cf44a503e88785292e92c2340c199d0"
+          }
+        },
+        {
+          "id": "net.mcreator:partybella:3.0.1@jar",
+          "name": "PartyBella",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 886365,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/partybella-1.18.2-3.0.0.jar",
+            "MD5": "a4a159ec225692d9f747da4159895df5"
+          }
+        },
+        {
+          "id": "net.mcreator:squidsblocks:1.0.5@jar",
+          "name": "SquidsBlocks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 394382,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/partyblocks-1.0.5-1.18.2.jar",
+            "MD5": "68118468475dbd9bc88ca814ce052c56"
+          }
+        },
+        {
+          "id": "net.pablitopablito70:leafcommands:1.0.9@jar",
+          "name": "LeafCommands",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 391498,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/PartyCommands_V.1.0.9.jar",
+            "MD5": "305e649fa4f8f358e340e3771746be47"
+          }
+        },
+        {
+          "id": "virtuoel.pehkui:pehkui:3.6.0+1.18.2-forge@jar",
+          "name": "Pehkui",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 385311,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/Pehkui-3.6.0+1.18.2-forge.jar",
+            "MD5": "c3a70836c099c615875f969e826b8a45"
+          }
+        },
+        {
+          "id": "dev.kosmx.playeranim:playeranimator:1.0.2+1.18@jar",
+          "name": "Player Animator",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 181336,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/player-animation-lib-forge-1.0.2+1.18.jar",
+            "MD5": "33e51d8320f9d5d8e37bc7f9479d6a3e"
+          }
+        },
+        {
+          "id": "vice.rubidium_extras:rubidium_extras:1.18.2_v1.3.2@jar",
+          "name": "Rubidium Extras",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 59001,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/rubidium_extras-1.18.2_v1.3.2.jar",
+            "MD5": "7e84913ee15ae1f1233425d612a16bbf"
+          }
+        },
+        {
+          "id": "me.jellysquid.mods.sodium.client:rubidium:0.5.6@jar",
+          "name": "Rubidium",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1342466,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/rubidium-0.5.6.jar",
+            "MD5": "8ff531d3619c39e9e059e400f63f035b"
+          }
+        },
+        {
+          "id": "net.mcreator:partygamesmod:1.6.0@jar",
+          "name": "PartyGamesMod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 156518,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/simplecommands-1.6.0-1.18.2.jar",
+            "MD5": "3aa706f7fae8ae778d152d0eab8ef3a6"
+          }
+        },
+        {
+          "id": "com.lucasmellof.broadcastvoice:simplevoicechat_broadcast:1.0.1@jar",
+          "name": "SimpleVoiceChat Broadcast",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 7307,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/simplevoicechat_broadcast-mc1.18.2-1.0.1.jar",
+            "MD5": "1b31b3a732e2abc9c9c886df40bde29d"
+          }
+        },
+        {
+          "id": "net.pablitopablito70:sprint:1.0.0@jar",
+          "name": "Sprint",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 148438784,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/Sprint-1.18.21.jar",
+            "MD5": "0b84a007a70de8086d8971aea7a20f44"
+          }
+        },
+        {
+          "id": "net.mcreator:leafdos:2.1.0@jar",
+          "name": "LeafdOS",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 130620,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/SquidBlockCreator-1.18.2-1.0.0.jar",
+            "MD5": "812daa36c32954b226c72f7d04d9414c"
+          }
+        },
+        {
+          "id": "net.mcreator:partygamesmodborkes:1.0.0@jar",
+          "name": "Partygamesmodborkes",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1413193,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/SquidPartyGamesModBorkes_v13.jar",
+            "MD5": "399af4137d9d9c72ae8f77f957dedc32"
+          }
+        },
+        {
+          "id": "net.anar4732:ts:1.0@jar",
+          "name": "TitleShow",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 4186,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/ts-1.0.jar",
+            "MD5": "91f50e2c7da29592470bc5f27ffe36f0"
+          }
+        },
+        {
+          "id": "de.maxhenkel:voicechat:1.18.2-2.5.17@jar",
+          "name": "Simple Voice Chat",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 8148977,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/voicechat-forge-1.18.2-2.5.17.jar",
+            "MD5": "ea066bc29f36dacc9681ccb8ad353567"
+          }
+        },
+        {
+          "id": "com.sk89q:worldedit:7.2.10+1742f98@jar",
+          "name": "WorldEdit",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 5500682,
+            "url": "https://iridescent-liger-86f272.netlify.app/servers/Snake-Games-1.18.2/forgemods/required/worldedit-mod-7.2.10.jar",
+            "MD5": "862cec57e297ec8f97f74745c2e8b905"
+          }
+        }
+      ]
+    }
+  ]
+}

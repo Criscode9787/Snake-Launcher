@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        input, button, label {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        input, button, label {
+            margin: 10px 0;
+        }
+
+        input {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2575fc;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #6a11cb;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        #qrcode {
+            margin-top: 20px;
+        }
+
+        #download {
+            margin-top: 10px;
+            display: none; /* Se muestra solo después de generar el QR */
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de Códigos QR</h1>
+    <div class="container">
+        <!-- Entrada de texto -->
+        <input type="text" id="textInput" placeholder="Introduce texto o URL" />
+
+        <!-- Selección de colores -->
+        <label for="colorDark">Color del QR:</label>
+        <input type="color" id="colorDark" value="#000000" />
+
+        <label for="colorLight">Color de fondo:</label>
+        <input type="color" id="colorLight" value="#ffffff" />
+
+        <!-- Botón para generar el QR -->
+        <button onclick="generateQRCode()">Generar QR</button>
+        
+        <!-- Contenedor para el QR -->
+        <div id="qrcode"></div>
+
+        <!-- Botón para descargar el QR -->
+        <button id="download" onclick="downloadQRCode()">Descargar QR</button>
+    </div>
+
+    <!-- Carga de la biblioteca QRCode.js -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script>
+        let qrCode; // Variable global para almacenar el QR
+
+        function generateQRCode() {
+            const input = document.getElementById('textInput').value;
+            const qrcodeContainer = document.getElementById('qrcode');
+            const colorDark = document.getElementById('colorDark').value;
+            const colorLight = document.getElementById('colorLight').value;
+
+            // Limpia el contenedor
+            qrcodeContainer.innerHTML = '';
+
+            if (input.trim() !== '') {
+                // Genera el código QR
+                qrCode = new QRCode(qrcodeContainer, {
+                    text: input,
+                    width: 200,
+                    height: 200,
+                    colorDark: colorDark,
+                    colorLight: colorLight,
+                });
+
+                // Muestra el botón de descarga
+                document.getElementById('download').style.display = 'inline-block';
+            } else {
+                alert('Por favor, introduce un texto o URL válido.');
+                document.getElementById('download').style.display = 'none';
+            }
+        }
+
+        function downloadQRCode() {
+            if (!qrCode) return;
+
+            // Selecciona el canvas generado por QRCode.js
+            const canvas = document.querySelector('#qrcode canvas');
+            if (canvas) {
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = 'codigo_qr.png';
+                link.click();
+            } else {
+                alert('Primero genera un código QR.');
+            }
+        }
+    </script>
+</body>
+</html>
